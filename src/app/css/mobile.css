@@ -1,0 +1,137 @@
+/* Cores */
+body {
+  --black: #000000;
+  --ash-black: #292929;
+  --white: #fafafa;
+  --pink: #FC427B;
+  --background: var(--ash-black);
+  --accent: var(--pink);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--accent);
+  padding-bottom: 100px;
+  min-height: 100vh;
+}
+
+/* Estilos Globais */
+* {
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Root */
+#root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  height: 5px;
+  width: 6px;
+  background: var(--background);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  -webkit-border-radius: 2ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff3;
+}
+
+/* Refresh Button */
+.refresh {
+  padding: 5px;
+  position: absolute;
+  border: 1px dotted var(--accent);
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.refresh path {
+  fill: var(--accent);
+}
+
+/* Box */
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin: 0;
+}
+
+/* Menu Toggle */
+.menuToggle {
+  z-index: 40;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  background: var(--pink);
+  padding-top: 100px;
+  will-change: transform;
+}
+
+.menuToggle ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+}
+
+.menuToggle li {
+  display: block;
+  transform-origin: -20px 50%;
+  font-weight: bold;
+  font-size: 38px;
+  padding: 10px;
+  will-change: transform, opacity, filter;
+}
+
+.menuToggle ul,
+.menuToggle li {
+  list-style: none;
+  margin: 0;
+}
+
+button.menuToggle {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--pink);
+  padding: 14px;
+}
+
+/* Menu Aberto */
+.menuToggle.menuOpen {
+  position: fixed;
+  top: 48px;
+  left: 30px;
+  right: 0;
+  z-index: 50;
+}

@@ -1,0 +1,42 @@
+.str-prj button{
+	font-weight: bold;
+	font-size: 18px;
+	--c: #00FFD4;
+	background: conic-gradient(from -135deg at 110% 50%, var(--c) 90deg, #0000 0) 0 var(--p, 0%), conic-gradient(from -135deg at 1.2em 50%, #0000 90deg, var(--c) 0) 100% var(--p, 0%);
+	background-size: var(--s, 0%) 100%;
+	background-repeat: no-repeat;
+	transition: 0.4s ease-in, background-position 0s;
+}
+
+.str-prj button:hover{
+	--p: 100%;
+	--s: calc(
+	50% + 1em
+	);
+	color: #001F23;
+}
+
+.send-button{
+	background: linear-gradient(#FC427B ,#FC427B ) var(--p,0)/var(--p,0) no-repeat;
+  	background-size: 0 100%;
+  	background-repeat: no-repeat;
+  	transition: .4s;
+    background-color: white;
+}
+
+.send-button:hover{
+	background-size: 100% 100%;
+	color: #E6E6E6;
+}
+
+@media screen and (max-width: 764px){
+
+	.str-prj button{
+		font-size: 14px;
+	}
+	
+}
+
+
+
+
