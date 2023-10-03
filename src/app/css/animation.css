@@ -29,6 +29,55 @@
 	color: #E6E6E6;
 }
 
+.proj-box-single {
+	position: relative;
+	overflow: hidden;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgb(32, 32, 32); 
+	opacity: 0; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.proj-box-single:hover .overlay {
+	opacity: 1; 
+}
+
+.proj-box-single img {
+	width: 100%; 
+	transform: scale(0.95); 
+	transition: transform 0.3s ease-in-out; 
+}
+
+.proj-box-single:hover img {
+	transform: scale(1.0); 
+}
+
+.btn-link {
+	padding: 10px 25px;
+	color: #FC427B;
+	border: 1px solid #FC427B;
+	border-radius: 30px;
+	text-decoration: none;
+	font-size: 20px;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.btn-link:hover {
+	background-color: #FC427B;
+	color: white;
+}
+  
 @media screen and (max-width: 764px){
 
 	.str-prj button{

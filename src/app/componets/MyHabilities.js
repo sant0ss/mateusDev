@@ -1,13 +1,13 @@
 import React from "react";
 import { habilidadesData } from "./Data"; 
 
-const MyHability = ({ icon: Icon, title, description, languages, tools, iconClass }) => {
+const MyHability = ({ icon: Icon, title, description, languages, tools, iconClass, whatIUse }) => {
   return (
     <div className="hblt-single w-full py-2.5 px-5 pb-10">
       <Icon className={`mt-16 w-16 h-16 py-3 mx-auto ${iconClass}`} />
       <h2 className="mt-12 font-bold text-xl my-6">{title}</h2>
       <h3 className="text-base my-6 font-normal">{description}</h3>
-      <h4 className="text-lg my-4 font-medium text-cyberpunk">Linguagens que eu ultilizo:</h4>
+      <h4 className="text-lg my-4 font-medium text-cyberpunk">{whatIUse}:</h4>
       <p className="text-base my-5">{languages}</p>
       <h4 className="text-lg font-medium text-cyberpunk">Ferramentas que eu domino:</h4>
       <ul className="my-5">

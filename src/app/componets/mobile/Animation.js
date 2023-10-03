@@ -42,7 +42,7 @@ export default function useMenuAnimation(isOpen) {
       ],
       ...menuAnimations
     ]);
-  }, [isOpen]);
+  }, [isOpen, animate]);
 
   return scope;
 }

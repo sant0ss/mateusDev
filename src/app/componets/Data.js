@@ -6,6 +6,7 @@ export const habilidadesData = [
       icon: FaLayerGroup,
       title: "DESIGNER",
       description: "Valorizo simplicidade, padrões limpos e interações planejadas em design.",
+      whatIUse: "O que eu gosto de fazer",
       languages: "UX, UI, Web, Logos",
       tools: [
         "Photoshop",
@@ -20,6 +21,7 @@ export const habilidadesData = [
         icon: FaCode,
         title: "FRONT-END",
         description: "Prezo eficiência em conteúdo, design e interações para experiências web cativantes.",
+        whatIUse: "Linguagens que eu utilizo",
         languages: "HTML, CSS, SASS, LESS, JavaScript",
         tools: [
           "Angular",
@@ -37,6 +39,7 @@ export const habilidadesData = [
         icon: BsGearFill,
         title: "BACK-END",
         description: "Valorizo conteúdo simples, design claro e interações intencionais, integrando dados para funcionalidades robustas.",
+        whatIUse: "Linguagens que eu utilizo",
         languages: "PHP",
         tools: ["Laravel", "Slim", "MongoDb", "MySql", "Wordpress"],
         iconClass: "icon-backend",
